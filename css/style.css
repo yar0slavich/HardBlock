@@ -180,4 +180,58 @@ html {
   font-weight: 400;
   letter-spacing: 0.3vw;
   line-height: 5vw;
+}
+
+.advantages-block {
+  display: grid;
+  grid-template-rows: 0.1fr 0.6fr 0.3fr;
+}
+.advantages-box {
+  position: relative;
+}
+.advantages-box:nth-child(2) {
+  background: #333333 url("..//img/advantages/bg.jpg") no-repeat center/cover;
+}
+.advantages-box:nth-child(2)::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.advantages-box:nth-child(3) {
+  display: flex;
+  justify-content: space-around;
+}
+.advantages-info {
+  max-width: 25vw;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  top: -35%;
+}
+.advantages-info:nth-child(1) {
+  left: 5%;
+}
+.advantages-info:nth-child(2) {
+  left: 38%;
+}
+.advantages-info:nth-child(3) {
+  left: 70%;
+}
+.advantages-info__img {
+  width: 12vw;
+  height: 12vw;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.advantages-info__img > img {
+  width: 6vw;
 }/*# sourceMappingURL=style.css.map */
