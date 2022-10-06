@@ -6,6 +6,7 @@
 html {
   font-family: "Montserrat", sans-serif;
   color: #333333;
+  font-size: 1.2vw;
 }
 
 .section-block {
@@ -79,7 +80,6 @@ html {
   position: relative;
   max-width: 23vw;
   width: 100%;
-  font-size: 1.2vw;
 }
 .hero-desc::before {
   position: absolute;
@@ -101,4 +101,83 @@ html {
 .hero-desc:nth-child(4) {
   left: 42%;
   top: 47%;
+}
+
+.comments-block {
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  position: relative;
+}
+.comments-box__left {
+  background-color: #333333;
+  position: relative;
+  color: #ffffff;
+}
+.comments-box__left::before {
+  content: "";
+  position: absolute;
+  width: 0.2vw;
+  height: 62%;
+  top: 30%;
+  left: 10%;
+  background-color: rgba(255, 255, 255, 0.3);
+}
+.comments-title {
+  font-size: 3vw;
+  max-width: 20vw;
+  width: 100%;
+  position: absolute;
+  left: 10%;
+  top: 5%;
+}
+.comments-desc {
+  max-width: 25vw;
+  position: absolute;
+  left: 15%;
+  top: 75.5%;
+}
+.comments-desc__title {
+  font-size: 1.5vw;
+  letter-spacing: 0.3vw;
+}
+.comments-desc__text {
+  margin-top: 20px;
+}
+.comments-cmt {
+  max-width: 25vw;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  left: 40%;
+  top: 10%;
+}
+.comments-cmt:nth-child(2) {
+  left: 70%;
+  top: 40%;
+}
+.comments-cmt:nth-child(3) {
+  left: 40%;
+  top: 60%;
+}
+.comments-cmt__img {
+  width: 12vw;
+  height: 10vw;
+  -webkit-clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+          clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+  background-color: #333333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.comments-cmt__img > img {
+  max-width: 4vw;
+  width: 100%;
+}
+.comments-cmt__name {
+  font-weight: 400;
+  letter-spacing: 0.3vw;
+  line-height: 5vw;
 }/*# sourceMappingURL=style.css.map */
