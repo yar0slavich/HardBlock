@@ -5,7 +5,8 @@
         position: relative
     &-box
         &__left
-            background-color: $section
+            background: $section url(..//img/comments/vodopad.jpg) no-repeat center / cover
+            box-shadow: 5px 0px 5px -5px rgba(0, 0, 0, 0.6) 
             position: relative
             color: $light
             &::before
@@ -16,21 +17,31 @@
                 top: 30%
                 left: 10%
                 background-color: rgba($light, 0.3)
-        &__right
+                z-index: 5
+            &::after
+               position: absolute
+               content: ''
+               top: 0
+               left: 0
+               width: 100%
+               height: 100%
+               background-color: rgba(0, 0, 0, 0.3) 
     &-title
-        font-size: 3vw
-        max-width: 20vw
+        font-size: 2vw
+        max-width: 13vw
         width: 100%
         position: absolute
         left: 10%
         top: 5%
+        z-index: 5
     &-desc
         max-width: 25vw
         position: absolute
         left: 15%
         top: 75.5%
+        z-index: 5
         &__title
-            font-size: 1.5vw
+            font-size: 1.3vw
             letter-spacing: 0.3vw
         &__text
             margin-top: 20px
@@ -42,14 +53,17 @@
         flex-direction: column
         align-items: center
         text-align: center
-        left: 40%
+        left: 39%
         top: 10%
         &:nth-child(2)
             left: 70%
-            top: 40%
+            top: 10%
         &:nth-child(3)
-            left: 40%
-            top: 60%
+            left: 39%
+            top: 57%
+        &:nth-child(4)
+            left: 70%
+            top: 57%
         &__img
             width: 12vw
             height: 10vw
